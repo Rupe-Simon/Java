@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class basic {
+    public static void main(String[] args) {
+        Scanner myStupid = new Scanner(System.in);
+// making public class and new scanner
+        System.out.println("What is Your name? ");
+        String yourName = myStupid.nextLine();
+
+        System.out.println("Percentage wise, how much does Eclipse suck realisticly? ");
+        Double eclipseSuckagePercentage = myStupid.nextDouble();
+
+        System.out.println("Percentage wise, how much does Eclipse suck emotionally? ");
+        Double eclipseEmotionalPain = myStupid.nextDouble();
+// setting up functions and printing responses
+        eclipseSuckagePercentage = eclipseEmotionalPain * eclipseSuckagePercentage;
+        if (eclipseSuckagePercentage > 2500.00) {
+            System.out.println("Eclipse does in fact suck " + Math.sqrt(eclipseSuckagePercentage) + "%. ");
+        }
+        else {
+            System.out.println(yourName + " sucks " + Math.pow(eclipseSuckagePercentage, 2) + "% for disagreeing with me. ");
+// if else statement and printing response
+        }
+    }
+}
